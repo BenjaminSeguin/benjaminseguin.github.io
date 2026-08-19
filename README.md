@@ -9,7 +9,7 @@ no generator, no dependencies to install.
 index.html          Home: bio, research interests, selected publications
 publications.html   Full list + BibTeX, grouped by year (math via KaTeX)
 software.html       R packages
-teaching.html       Courses taught / assisted
+teaching.html       Course table (add a <tr> per course)
 experience.html     CV timeline: appointments, education, industry, distinctions
 css/style.css       All styling. Design tokens are at the top of the file.
 assets/             Images (portrait)
