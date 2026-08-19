@@ -302,22 +302,29 @@ h1{
 
 /* ---------- course table (teaching) ---------- */
 .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 1rem}
-.course-table{width:100%;min-width:660px;border-collapse:collapse;font-size:.92rem}
+.course-table{
+  width:100%;min-width:660px;border-collapse:collapse;font-size:.92rem;
+}
 .course-table th{
   font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.11em;
   color:var(--muted);text-align:left;white-space:nowrap;
-  padding:0 1.4rem .75rem 0;border-bottom:1px solid var(--line);
+  padding:0 1.5rem .8rem 0;
+  border-bottom:2px solid var(--ink);      /* strong rule under the header */
 }
 .course-table td{
-  padding:1.15rem 1.4rem 1.15rem 0;
+  padding:1.3rem 1.5rem;
+  padding-left:0;
   border-bottom:1px solid var(--line);vertical-align:top;
 }
+.course-table th:last-child,.course-table td:last-child{padding-right:0}
 .course-table tbody tr:last-child td{border-bottom:0}
+.course-table tbody tr:hover td{background:color-mix(in srgb,var(--accent) 5%,transparent)}
 .course-table .c-course{
   font-family:var(--serif);font-size:1.08rem;font-weight:650;letter-spacing:-.01em;
+  color:var(--ink);
 }
 .course-table .c-muted{color:var(--muted)}
-.course-table .c-year{white-space:nowrap;color:var(--muted)}
+.course-table .c-year{white-space:nowrap;color:var(--muted);font-variant-numeric:tabular-nums}
 .visually-hidden{
   position:absolute;width:1px;height:1px;margin:-1px;padding:0;
   overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;
