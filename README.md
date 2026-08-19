@@ -42,9 +42,10 @@ is all it takes to publish a change.
   block at the top of `css/style.css`. Change them there, not inline.
 - **Dark mode** is the `@media (prefers-color-scheme:dark)` block at the very
   bottom of `css/style.css`. Delete that block for a light-only site.
-- **Portrait** — `assets/portrait.jpg` is a 4:5 crop (840×1050) of
-  `assets/portrait-source.jpg`, which is kept uncropped so the crop can be
-  redone later. The slot is 280px wide on desktop, set by `--rail`.
+- **Portrait** — `assets/portrait.jpg` is a 4:5 head-and-shoulders crop
+  (400×500) of `assets/portrait-source.jpg`, kept uncropped so the crop can be
+  redone. Crop box: `(175, 168, 575, 668)`. The slot is 230px wide on desktop,
+  set by `--rail` in `css/style.css`.
 - **Math** — write `$inline$` or `$$display$$`; KaTeX renders it on
   `research.html` and `publications.html`. To add math to another page, copy
   the three KaTeX tags from the `<head>` of `research.html`.
