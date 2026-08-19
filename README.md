@@ -7,9 +7,10 @@ no generator, no dependencies to install.
 
 ```
 index.html          Home: bio, research interests, selected publications
-research.html       Long-form research description (math via KaTeX)
-publications.html   Full list + BibTeX, grouped by year
+publications.html   Full list + BibTeX, grouped by year (math via KaTeX)
 software.html       R packages
+teaching.html       Courses taught / assisted
+experience.html     CV timeline: appointments, education, industry, distinctions
 css/style.css       All styling. Design tokens are at the top of the file.
 assets/             Images (portrait)
 files/              CV and paper PDFs
@@ -47,12 +48,12 @@ is all it takes to publish a change.
   redone. Crop box: `(0, 140, 592, 880)`. The slot is 230px wide on desktop,
   set by `--rail` in `css/style.css`.
 - **Math** — write `$inline$` or `$$display$$`; KaTeX renders it on
-  `research.html` and `publications.html`. To add math to another page, copy
-  the three KaTeX tags from the `<head>` of `research.html`.
+  `publications.html`. To add math to another page, copy the three KaTeX tags
+  from the `<head>` of `publications.html`.
 - **Adding a publication** — copy an existing `<li class="item">` block. The
   `.item-year` div is the left column; everything else goes in the second div.
 - The nav is duplicated in each HTML file; there are no partials. Update
-  `.site-nav` in all four files when you add a page, and set
+  `.site-nav` in all five files when you add a page, and set
   `aria-current="page"` on the current one.
 
 ## Still to do

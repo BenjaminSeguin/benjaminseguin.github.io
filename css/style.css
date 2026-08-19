@@ -278,3 +278,24 @@ h1{
 }
 .katex{font-size:1.02em}
 .longform p:has(> .katex-display){margin-bottom:1.15rem}
+
+/* ---------- CV timeline (experience / teaching) ---------- */
+.timeline{list-style:none}
+.timeline .item{grid-template-columns:100px minmax(0,1fr)}
+.item-org{font-size:.9rem;color:var(--muted);margin:0 0 .35rem}
+.item-org strong{color:var(--ink);font-weight:600}
+.cv-download{
+  margin:3rem 0 0;padding-top:2rem;border-top:1px solid var(--line);
+}
+.cv-download a{
+  font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;
+  text-decoration:none;border-bottom:1px solid transparent;
+}
+.cv-download a:hover{border-bottom-color:var(--accent)}
+.empty-note{
+  font-size:.92rem;color:var(--muted);max-width:60ch;
+  border-left:2px solid var(--line);padding-left:1.1rem;
+}
+@media (max-width:860px){
+  .timeline .item{grid-template-columns:1fr}
+}
