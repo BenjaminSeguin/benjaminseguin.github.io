@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" width="360" height="360" role="img" aria-label="Portrait placeholder">
-  <rect width="360" height="360" fill="#eceae3"/>
-  <circle cx="180" cy="142" r="54" fill="#cfcdc4"/>
-  <path d="M62 360c0-70 53-118 118-118s118 48 118 118z" fill="#cfcdc4"/>
-  <text x="180" y="332" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#8b9298">replace with assets/portrait.jpg</text>
-</svg>

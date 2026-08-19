@@ -42,8 +42,9 @@ is all it takes to publish a change.
   block at the top of `css/style.css`. Change them there, not inline.
 - **Dark mode** is the `@media (prefers-color-scheme:dark)` block at the very
   bottom of `css/style.css`. Delete that block for a light-only site.
-- **Portrait** — replace `assets/portrait.svg` with a real photo (a square
-  crop, ~720×720 works well) and update the `src` in `index.html`.
+- **Portrait** — `assets/portrait.jpg` is a 4:5 crop (840×1050) of
+  `assets/portrait-source.jpg`, which is kept uncropped so the crop can be
+  redone later. The slot is 280px wide on desktop, set by `--rail`.
 - **Math** — write `$inline$` or `$$display$$`; KaTeX renders it on
   `research.html` and `publications.html`. To add math to another page, copy
   the three KaTeX tags from the `<head>` of `research.html`.
@@ -55,7 +56,6 @@ is all it takes to publish a change.
 
 ## Still to do
 
-- [ ] Add a real portrait photo.
 - [ ] Add Google Scholar / LinkedIn links (placeholders are commented out in `index.html`).
 - [ ] Split `files/ncg-hb.pdf` into separate manuscript and M.Sc. thesis PDFs
       once the submitted paper diverges from the thesis.
