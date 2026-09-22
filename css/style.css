@@ -329,3 +329,11 @@ h1{
   position:absolute;width:1px;height:1px;margin:-1px;padding:0;
   overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;
 }
+
+/* With seven nav items the header wraps to ~3 lines on a phone. A sticky
+   header that tall eats a quarter of the viewport, so let it scroll away. */
+@media (max-width:640px){
+  .site-header{position:static}
+  .site-nav{gap:.6rem 1rem}
+  .site-nav a{font-size:.8rem}
+}
