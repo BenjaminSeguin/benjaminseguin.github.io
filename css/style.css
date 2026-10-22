@@ -337,3 +337,11 @@ h1{
   .site-nav{gap:.6rem 1rem}
   .site-nav a{font-size:.8rem}
 }
+
+/* ---------- project tags ---------- */
+.tags{display:flex;flex-wrap:wrap;gap:.4rem .5rem;list-style:none;margin:.8rem 0 0}
+.tags li{
+  font-size:.66rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--muted);border:1px solid var(--line);
+  padding:.22rem .55rem;white-space:nowrap;
+}
