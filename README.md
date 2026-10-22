@@ -6,11 +6,10 @@ no generator, no dependencies to install.
 ## Structure
 
 ```
-index.html          Home: bio, interests, looking-for, selected publications
+index.html          Home: bio, looking-for, selected publications
 publications.html   Full list + BibTeX, grouped by year (math via KaTeX)
 software.html       R packages
 talks.html          Talks, with slides
-projects.html       Personal projects (uncomment the <ul> and copy the <li>)
 experience.html     CV timeline: research, education, industry, distinctions
 css/style.css       All styling. Design tokens are at the top of the file.
 assets/             Images (portrait)
